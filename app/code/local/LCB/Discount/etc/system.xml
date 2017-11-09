@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <general translate="label" module="lcb_discount">
+            <groups>
+                <coupon_code translate="label">
+                    <label>Coupon Code Generator</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_disable translate="label">
+                            <label>Enable/Disable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>-1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry</validate>
+                        </enable_disable>
+                        <discount_website translate="label">
+                            <label>Website</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>adminhtml/system_config_source_website</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry</validate>
+                            <depends>
+                                <enable_disable>1</enable_disable>
+                            </depends>
+                        </discount_website>
+                    </fields>
+                </coupon_code>
+            </groups>
+        </general>
+    </sections>
+</config>

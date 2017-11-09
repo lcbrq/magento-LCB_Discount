@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <LCB_Discount>
+      <version>0.1.0</version>
+    </LCB_Discount>
+  </modules>
+  <global>
+    <helpers>
+      <lcb_discount>
+        <class>LCB_Discount_Helper</class>
+      </lcb_discount>
+    </helpers>
+  </global>
+</config> 
